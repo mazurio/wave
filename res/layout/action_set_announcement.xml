@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Title -->
+            <com.devspark.robototextview.widget.RobotoEditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/branding_light"
+                android:hint="Title"
+                android:inputType="text"/>
+            <!-- Title -->
+            <!-- Description -->
+            <com.devspark.robototextview.widget.RobotoEditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/branding_light"
+                android:hint="Description"
+                android:inputType="textImeMultiLine"/>
+            <!-- Description -->
+            <!-- Confirm -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.devspark.robototextview.widget.RobotoButton
+                    android:id="@+id/cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickCancel"
+                    android:text="Cancel"/>
+
+                <com.devspark.robototextview.widget.RobotoButton
+                    android:id="@+id/confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickConfirm"
+                    android:text="Confirm"/>
+            </LinearLayout>
+            <!-- Confirm -->
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

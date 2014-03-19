@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="72dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Map -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:orientation="vertical"
+                android:background="@drawable/events_activity_map">
+
+                <fragment class="com.google.android.gms.maps.MapFragment"
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp" />
+            </LinearLayout>
+            <!-- Map -->
+
+            <!-- Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/card_margin"
+                android:background="@drawable/card">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/card_padding_top"
+                        android:paddingLeft="@dimen/card_padding_left"
+                        android:paddingRight="@dimen/card_padding_right"
+                        android:paddingBottom="@dimen/card_padding_bottom">
+
+                        <com.devspark.robototextview.widget.RobotoTextView
+                            android:id="@+id/description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="45sp"
+                            android:text="9am - 11am"
+                            app:typeface="roboto_thin" />
+
+                        <com.devspark.robototextview.widget.RobotoTextView
+                            android:id="@+id/description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:text="SCC.311 Distributed Systems"
+                            app:typeface="roboto_thin" />
+
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/card_bottom"
+                        android:paddingTop="@dimen/card_bottom_padding_top"
+                        android:paddingLeft="@dimen/card_bottom_padding_left"
+                        android:paddingRight="@dimen/card_bottom_padding_right"
+                        android:paddingBottom="@dimen/card_bottom_padding_bottom">
+
+                        <com.devspark.robototextview.widget.RobotoTextView
+                            android:id="@+id/status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:textSize="15sp"
+                            android:text="Friday, 28 February 2014"
+                            app:typeface="roboto_thin" />
+
+                        <ImageView
+                            android:id="@+id/action_settings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/ic_action_overflow" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Card -->
+
+            <TextView
+                android:id="@+id/statusBar"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text=" "/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

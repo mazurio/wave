@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/card_margin"
+        android:background="@drawable/card">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/card_padding_top"
+                android:paddingLeft="@dimen/card_padding_left"
+                android:paddingRight="@dimen/card_padding_right"
+                android:paddingBottom="@dimen/card_padding_bottom">
+
+                <com.devspark.robototextview.widget.RobotoEditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="Username"
+                    app:typeface="roboto_thin" />
+
+                <com.devspark.robototextview.widget.RobotoEditText
+                    android:id="@+id/password"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:hint="Password"
+                    app:typeface="roboto_thin" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- Card -->
+
+    <com.devspark.robototextview.widget.RobotoButton
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/card_margin"
+        android:text="Login" />
+</LinearLayout>

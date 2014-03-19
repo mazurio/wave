@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.devspark.robototextview.widget.RobotoTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="25sp"
+                android:text="You have no messages."
+                app:typeface="roboto_thin"/>
+
+                <!-- Card -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/card_margin"
+                    android:background="@drawable/card">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/card_padding_top"
+                            android:paddingLeft="@dimen/card_padding_left"
+                            android:paddingRight="@dimen/card_padding_right"
+                            android:paddingBottom="@dimen/card_padding_bottom">
+
+                            <com.devspark.robototextview.widget.RobotoTextView
+                                android:id="@+id/firstname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:text="Hi, Are you coming over tonight?"
+                                app:typeface="roboto_thin"/>
+
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/card_bottom"
+                            android:paddingTop="@dimen/card_bottom_padding_top"
+                            android:paddingLeft="@dimen/card_bottom_padding_left"
+                            android:paddingRight="@dimen/card_bottom_padding_right"
+                            android:paddingBottom="@dimen/card_bottom_padding_bottom">
+
+                            <com.devspark.robototextview.widget.RobotoTextView
+                                android:id="@+id/description"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:textSize="14sp"
+                                android:text="Send by Phil Benachour, 26 February 09:55"
+                                app:typeface="roboto_thin" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- Card -->
+
+                <!-- Card -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/card_margin"
+                    android:background="@drawable/card">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/card_padding_top"
+                            android:paddingLeft="@dimen/card_padding_left"
+                            android:paddingRight="@dimen/card_padding_right"
+                            android:paddingBottom="@dimen/card_padding_bottom">
+
+                            <com.devspark.robototextview.widget.RobotoTextView
+                                android:id="@+id/firstname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:text="Hi Phil, \n\nI went to see you in the Office but you weren't there. Any chance You could send me an appointment request?\n\nThanks,\nDamian"
+                                app:typeface="roboto_thin"/>
+
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/card_bottom"
+                            android:paddingTop="@dimen/card_bottom_padding_top"
+                            android:paddingLeft="@dimen/card_bottom_padding_left"
+                            android:paddingRight="@dimen/card_bottom_padding_right"
+                            android:paddingBottom="@dimen/card_bottom_padding_bottom">
+
+                            <com.devspark.robototextview.widget.RobotoTextView
+                                android:id="@+id/description"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:textSize="14sp"
+                                android:text="Send by Damian Mazurkiewicz, 26 February 09:55"
+                                app:typeface="roboto_thin" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- Card -->
+        </LinearLayout>
+    </ScrollView>
+</uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="#111">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:alpha="0.5"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="85dp"
+        android:text="Bowland College"
+        android:maxLines="1"
+        android:textSize="23dp"
+        android:textColor="#fff"
+        app:typeface="roboto_condensed_bold"/>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="110dp"
+        android:text="Bowland is the oldest college at the University."
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="15dp"
+        android:textColor="#BFB39F"
+        app:typeface="roboto_condensed_light"/>
+</FrameLayout>

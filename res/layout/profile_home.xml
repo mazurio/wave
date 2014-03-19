@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.devspark.robototextview.widget.RobotoTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25sp"
+                    android:textColor="@color/branding_light"
+                    android:text="Welcome"
+                    app:typeface="roboto_thin"/>
+
+                <!-- Card -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/card_margin"
+                    android:background="@drawable/card">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/card_padding_top"
+                            android:paddingLeft="@dimen/card_padding_left"
+                            android:paddingRight="@dimen/card_padding_right"
+                            android:paddingBottom="@dimen/card_padding_bottom">
+
+                            <com.devspark.robototextview.widget.RobotoTextView
+                                android:id="@+id/firstname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="45sp"
+                                app:typeface="roboto_thin"/>
+
+                            <com.devspark.robototextview.widget.RobotoTextView
+                                android:id="@+id/lastname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="25sp"
+                                app:typeface="roboto_thin"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/card_bottom"
+                            android:paddingTop="@dimen/card_bottom_padding_top"
+                            android:paddingLeft="@dimen/card_bottom_padding_left"
+                            android:paddingRight="@dimen/card_bottom_padding_right"
+                            android:paddingBottom="@dimen/card_bottom_padding_bottom">
+
+                            <com.devspark.robototextview.widget.RobotoTextView
+                                android:id="@+id/description"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                app:typeface="roboto_thin"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- Card -->
+
+                <com.devspark.robototextview.widget.RobotoTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25sp"
+                    android:textColor="@color/branding_light"
+                    android:text="@string/profile_home_balance"
+                    app:typeface="roboto_thin"/>
+
+                <!-- Card -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/card_margin"
+                    android:background="@drawable/card">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/card_padding_top"
+                            android:paddingLeft="@dimen/card_padding_left"
+                            android:paddingRight="@dimen/card_padding_right"
+                            android:paddingBottom="@dimen/card_padding_bottom">
+
+                            <com.devspark.robototextview.widget.RobotoTextView
+                                android:id="@+id/balance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="45sp"
+                                android:text="£2.50"
+                                app:typeface="roboto_thin"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/card_bottom"
+                            android:paddingTop="@dimen/card_bottom_padding_top"
+                            android:paddingLeft="@dimen/card_bottom_padding_left"
+                            android:paddingRight="@dimen/card_bottom_padding_right"
+                            android:paddingBottom="@dimen/card_bottom_padding_bottom">
+
+                            <com.devspark.robototextview.widget.RobotoTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:text="@string/profile_home_balance"
+                                app:typeface="roboto_thin"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- Card -->
+            </LinearLayout>
+        </ScrollView>
+</uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout>

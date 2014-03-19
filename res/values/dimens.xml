@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp -->
+    <dimen name="navigation_drawer_width">260dp</dimen>
+
+    <!-- Cards -->
+    <dimen name="card_margin">10dp</dimen>
+
+    <dimen name="card_padding_top">10dp</dimen>
+    <dimen name="card_padding_left">15dp</dimen>
+    <dimen name="card_padding_right">15dp</dimen>
+    <dimen name="card_padding_bottom">10dp</dimen>
+
+    <dimen name="card_bottom_padding_top">10dp</dimen>
+    <dimen name="card_bottom_padding_right">10dp</dimen>
+    <dimen name="card_bottom_padding_left">10dp</dimen>
+    <dimen name="card_bottom_padding_bottom">10dp</dimen>
+
+    <!-- Fragment Library -->
+    <dimen name="library_gridview">150dp</dimen>
+    <dimen name="library_book_height">220dp</dimen>
+</resources>

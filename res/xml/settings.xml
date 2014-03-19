@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="account"
+        android:title="@string/preferences_account">
+
+        <EditTextPreference
+            android:key="email"
+            android:enabled="false"
+            android:title="@string/preferences_email"
+            android:summary="@string/preferences_email_value" />
+
+        <Preference
+            android:key="logout"
+            android:enabled="true"
+            android:title="@string/preferences_logout" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="about"
+        android:title="@string/preferences_about">
+
+        <EditTextPreference
+            android:key="author"
+            android:enabled="false"
+            android:title="@string/preferences_author"
+            android:summary="@string/preferences_author_value" />
+
+        <EditTextPreference
+            android:key="university"
+            android:enabled="false"
+            android:title="@string/preferences_university"
+            android:summary="@string/preferences_university_value" />
+
+        <EditTextPreference
+            android:key="version"
+            android:enabled="false"
+            android:title="@string/preferences_version"
+            android:summary="@string/preferences_version_value" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

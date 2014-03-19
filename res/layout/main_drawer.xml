@@ -1,0 +1,11 @@
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:choiceMode="singleChoice"
+    android:background="#FFFFFF"
+    android:dividerHeight="0dp"
+    android:divider="#FFFFFF"
+    android:listSelector="#E5E5E5"
+    tools:context="uk.ac.lancaster.wave.Activity.Navigation.Drawer" />

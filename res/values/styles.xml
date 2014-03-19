@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarStyle">@style/AppTheme.ActionBar</item>
+
+        <item name="android:spinnerDropDownItemStyle">@style/AppTheme.ActionBar.Spinner</item>
+
+        <item name="ptrHeaderStyle">@style/AppTheme.ActionBar.PullToRefresh</item>
+
+        <item name="android:windowBackground">@color/light</item>
+
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="AppTheme.ActionBar" parent="android:Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/theme_actionbar</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.PullToRefresh" parent="android:Widget">
+        <item name="ptrProgressBarColor">@color/branding_dark</item>
+        <item name="ptrPullText">@string/action_pull_text</item>
+        <item name="ptrRefreshingText">@string/action_refreshing_text</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.Transparent" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:windowBackground">@color/light</item>
+
+        <!-- KitKat -->
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.Spinner" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+</resources>

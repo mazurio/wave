@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/card_margin"
+        android:background="@drawable/card">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/cover"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/library_book_height"
+                android:minHeight="@dimen/library_book_height"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/card_padding_top"
+                android:paddingLeft="@dimen/card_padding_left"
+                android:paddingRight="@dimen/card_padding_right"
+                android:paddingBottom="@dimen/card_padding_bottom">
+
+                <com.devspark.robototextview.widget.RobotoTextView
+                    android:id="@+id/author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    app:typeface="roboto_light"/>
+
+                <com.devspark.robototextview.widget.RobotoTextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    app:typeface="roboto_thin"/>
+
+                <com.devspark.robototextview.widget.RobotoTextView
+                    android:id="@+id/timestamp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    app:typeface="roboto_thin"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- Card -->
+</LinearLayout>
